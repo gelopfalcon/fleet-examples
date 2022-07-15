@@ -21,6 +21,4 @@ targetCustomizations:
     values:
       serviceType: LoadBalancer
       replicas: 3
-  clusterSelector:
-    matchLabels:
-      env: prod
+  clusterSelector: {}

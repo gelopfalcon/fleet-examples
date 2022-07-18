@@ -3,22 +3,22 @@ targetCustomizations:
 - name: dev
   helm:
     values:
-      replication: false
+      replicas: 2
   clusterSelector:
     matchLabels:
       env: dev
 
-- name: test
+- name: stg
   helm:
     values:
       replicas: 3
   clusterSelector:
     matchLabels:
-      env: test
+      env: stg
 
 - name: prod
   helm:
     values:
       serviceType: LoadBalancer
-      replicas: 3
+      replicas: 4
   clusterSelector: {}

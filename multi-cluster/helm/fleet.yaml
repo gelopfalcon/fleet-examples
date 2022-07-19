@@ -3,7 +3,7 @@ targetCustomizations:
 - name: falconshop
   helm:
     values:
-      replicas: 2
+      replicas: 3
   clusterSelector:
     matchLabels:
       customer: falconshop
@@ -11,7 +11,7 @@ targetCustomizations:
 - name: falconeats
   helm:
     values:
-      replicas: 3
+      replicas: 4
   clusterSelector:
     matchLabels:
       customer: falconeats

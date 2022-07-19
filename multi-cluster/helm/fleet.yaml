@@ -1,20 +1,20 @@
 namespace: fleet-mc-helm-example
 targetCustomizations:
-- name: dev
+- name: falconshop
   helm:
     values:
       replicas: 2
   clusterSelector:
     matchLabels:
-      env: dev
+      customer: falconshop
 
-- name: stg
+- name: falconeats
   helm:
     values:
       replicas: 3
   clusterSelector:
     matchLabels:
-      env: stg
+      customer: falconeats
 
 - name: prod
   helm:

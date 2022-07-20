@@ -1,4 +1,4 @@
-namespace: fleet-mc-helm-example
+namespace: default
 targetCustomizations:
 - name: falconshop
   helm:
